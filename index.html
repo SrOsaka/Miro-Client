@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miro Client</title>
+    <link rel="icon" type="image/png" href="./assets/miro-logo-tipo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="splide-4.1.3/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.svg" alt="Miro Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enterprise</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex sing-up">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <img src="./assets/Idioma.svg" alt="languages">EN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><img src="./assets/TwemojiFlagUnitedStates.svg"
+                                            alt="Flag United States">English</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="./assets/EmojioneV1FlagForBrazil.svg"
+                                            alt="Flag For Brazil">PT-BR</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Sales</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn btn-outline-success" type="submit">
+                        Sign up free
+                        <img src="./assets/MaterialSymbolsArrowRightAlt.svg" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">
+                <img src="./assets/logo.svg" alt="Miro Logo" height="30">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Product
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Enterprise</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+
+            </ul>
+
+            <hr>
+
+            <div class="dropdown mb-2">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <img src="./assets/Idioma.svg" alt="languages"> EN
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><img src="./assets/TwemojiFlagUnitedStates.svg"
+                                alt="Flag For UnitedStates">English</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"><img src="./assets/EmojioneV1FlagForBrazil.svg"
+                                alt="Flag For Brazil">PT-BR</a></li>
+                </ul>
+            </div>
+
+            <a class="nav-link" href="#">Contact Sales</a>
+            <a class="nav-link" href="#">Login</a>
+
+            <button class="btn-sing-up" type="submit">
+                Sign up free
+                <img src="./assets/MaterialSymbolsArrowRightAlt.svg" alt="">
+            </button>
+
+        </div>
+    </div>
+    <div class="container">
+        <section class="hero-section">
+            <div class="grid">
+                <div data-aos="fade-right" class="col-5">
+                    <h1>Take ideas from <br> better to best</h1>
+                    <p>Miro is your team's visual platform to connect,<br> collaborate, and create — together.</p>
+                    <input type="text" placeholder="Enter your work email">
+                    <button class="btn btn-outline-success" type="submit">Sign up free →</button>
+                    <span>Collaborate with your team within minutes</span>
+                    <div>
+                        <div class="reviews-hero">
+                            <div class="stars">
+                                <div>
+                                    <img src="./assets/star.svg" alt="star">
+                                    <img src="./assets/star.svg" alt="star">
+                                    <img src="./assets/star.svg" alt="star">
+                                    <img src="./assets/star.svg" alt="star">
+                                    <img src="./assets/star-metade.svg" alt="star 1/2">
+                                </div>
+                                <p>Based on 5149+ reviews:</p>
+                            </div>
+                            <div class="logos-reviews">
+                                <img src="./assets/g2-logo.svg" alt="g2 logo">
+                                <img src="./assets/GetApp.svg" alt="GetApp logo">
+                                <img src="./assets/Capterra.svg" alt="Capterra logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="col-6"><img src="./assets/headerimage-without-text.png"
+                        alt="Website example"></div>
+            </div>
+        </section>
+        <section class="partner-brands-section">
+            <p data-aos="fade-up">Trusted by 45M+ users</p>
+            <div data-aos="zoom-in" class="grid">
+                <div class="col-2"><img src="./assets/Walmart.svg" alt="Walmart"></div>
+                <div class="col-2"><img src="./assets/cisco.svg" alt="Cisco"></div>
+                <div class="col-2"><img src="./assets/Volvo.svg" alt="Volvo"></div>
+                <div class="col-2"><img src="./assets/deloitte.svg" alt="Deloitte"></div>
+                <div class="col-2"><img src="./assets/okta.svg" alt="Okta"></div>
+            </div>
+        </section>
+        <section class="features-section">
+            <div data-aos="fade-up" class="decorative-text">
+                <div>
+                    <span>YOUR IDEA STARTS HERE</span>
+                </div>
+                <h1>
+                    Collaborate without <br>
+                    constraints</h1>
+            </div>
+            <div class="grid">
+                <div data-aos="fade-right" class="col-4">
+                    <h1>Free forever</h1>
+                    <p>Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates. Signing
+                        up with your work email lets you bring in your team faster. See our
+                        <a href="">pricing plans</a> for more features.
+                    </p>
+                </div>
+                <div data-aos="zoom-in" class="col-4">
+                    <h1>Easy integrations</h1>
+                    <p>Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and Jira, so
+                        your workflow is seamless. View the full list in our <a href="">Marketplace</a>.</p>
+                </div>
+                <div data-aos="fade-left" class="col-4">
+                    <h1>Security first</h1>
+                    <p>We treat your data like you would — with the utmost care. We follow industry-leading security
+                        standards and give you tools to protect intellectual property. Learn more
+                        at our <a href="">Trust Center</a>.</p>
+                </div>
+            </div>
+            <button data-aos="zoom-in" type="submit">Sign up free →</button>
+        </section>
+        <section class="work-together-section">
+            <div class="grid">
+                <div class="col-6">
+                    <h1 data-aos="fade-right">Work together, <br> wherever you work</h1>
+                    <p data-aos="fade-right">In the office, remote, or a mix of the two, with Miro, <br> your team can
+                        connect, collaborate,
+                        and
+                        co-create in <br> one space no matter where you are.</p>
+                    <div data-aos="fade-up"><a href="">Learn more</a><img src="./assets/BlueArrowRight.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img data-aos="fade-left" src="./assets/hybridwork.png" alt="hybrid work example">
+                </div>
+            </div>
+        </section>
+        <section class="connect-tools-section">
+            <div class="grid">
+                <div class="col-6">
+                    <img data-aos="fade-right" src="./assets/M3_integrations_all_integrations.png"
+                        alt="M3 integrations example">
+                </div>
+                <div class="col-6">
+                    <div>
+                        <h1 data-aos="fade-left">Connect <br> your tools,<br> close your tabs</h1>
+                        <p data-aos="fade-left">Whether you want to edit your Google Docs, resolve <br> Jira issues, or
+                            collaborate over
+                            Zoom,
+                            Miro has 100+ <br> integrations with tools you already use and love.</p>
+                        <div data-aos="fade-up"><a href="">
+                                Learn more</a>
+                            <img src="./assets/BlueArrowRight.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="zoom-in" class="ways-work-section">
+            <div>
+                <h1>The Ways <br> We Work</h1>
+                <p>How has our relationship with work changed?</p>
+                <button type="submit">View the report →</button>
+            </div>
+        </section>
+        <section data-aos="fade-up" class="product-showcase-section">
+            <h1>Built for the way you work</h1>
+            <div>
+                <div class="scroll">
+                    <button class="quad active" data-slide="0">
+                        Brainstorming
+                    </button>
+
+                    <button class="quad" data-slide="1">
+                        Diagramming
+                    </button>
+
+                    <button class="quad" data-slide="2">
+                        Meetings & Workshops
+                    </button>
+
+                    <button class="quad" data-slide="3">
+                        Scrum Events
+                    </button>
+
+                    <button class="quad" data-slide="4">
+                        Mapping
+                    </button>
+
+                    <button class="quad" data-slide="5">
+                        Research & Design
+                    </button>
+
+                    <button class="quad" data-slide="6">
+                        Strategic Planning
+                    </button>
+                </div>
+            </div>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Brainstorming</h1>
+                                    <p>Unleash creative ideas and build on them with the help of sticky notes,
+                                        images, mind maps, videos, drawing capabilities — the list goes on.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/Brainstormwithoutshadow.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Diagramming</h1>
+                                    <p>Create diagrams online with the help of AI and go from brainstorming to process
+                                        mapping, and from technical documentation to system design in seconds.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/diagramming.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Brainstorming</h1>
+                                    <p>Unleash creative ideas and build on them with the help of sticky notes,
+                                        images, mind maps, videos, drawing capabilities — the list goes on.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/Brainstormwithoutshadow.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Diagramming</h1>
+                                    <p>Create diagrams online with the help of AI and go from brainstorming to process
+                                        mapping, and from technical documentation to system design in seconds.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/diagramming.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Brainstorming</h1>
+                                    <p>Unleash creative ideas and build on them with the help of sticky notes,
+                                        images, mind maps, videos, drawing capabilities — the list goes on.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/Brainstormwithoutshadow.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Diagramming</h1>
+                                    <p>Create diagrams online with the help of AI and go from brainstorming to process
+                                        mapping, and from technical documentation to system design in seconds.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/diagramming.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Brainstorming</h1>
+                                    <p>Unleash creative ideas and build on them with the help of sticky notes,
+                                        images, mind maps, videos, drawing capabilities — the list goes on.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/Brainstormwithoutshadow.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" class="product-showcase-section second-showcase">
+            <h1>Built for all kinds of teams</h1>
+            <div>
+                <div class="scroll">
+                    <button class="quad active" data-slide="0">
+                        UX & Design
+                    </button>
+
+                    <button class="quad" data-slide="1">
+                        Marketing
+                    </button>
+
+                    <button class="quad" data-slide="2">
+                        Product Management
+                    </button>
+
+                    <button class="quad" data-slide="3">
+                        Engineering
+                    </button>
+
+                    <button class="quad" data-slide="4">
+                        Consultants
+                    </button>
+
+                    <button class="quad" data-slide="5">
+                        Agile Coaches
+                    </button>
+
+                    <button class="quad" data-slide="6">
+                        Sales
+                    </button>
+                </div>
+            </div>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>UX & Design</h1>
+                                    <div>
+                                        <img src="./assets/correct-array.svg" alt="">
+                                        <p>Build low-fi wireframes</p>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/correct-array.svg" alt="">
+                                        <p>Involve stakeholders in the design process</p>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/correct-array.svg" alt="">
+                                        <p>Run engaging design workshops</p>
+                                    </div>
+                                    <a href="">Learn more →</a>
+                                    <div>
+                                        <p>Integrate your favorite tools</p>
+                                        <div>
+                                            <img src="./assets/diamante.svg" alt="">
+                                            <img src="./assets/adobeXD.svg" alt="">
+                                            <img src="./assets/figma.svg" alt="">
+                                            <img src="./assets/notion.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-8">
+                                    <img src="./assets/uxdesignwithoutshadow.png" alt="ux design without shadow">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Diagramming</h1>
+                                    <p>Create diagrams online with the help of AI and go from brainstorming to process
+                                        mapping, and from technical documentation to system design in seconds.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/diagramming.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Brainstorming</h1>
+                                    <p>Unleash creative ideas and build on them with the help of sticky notes,
+                                        images, mind maps, videos, drawing capabilities — the list goes on.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/Brainstormwithoutshadow.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Diagramming</h1>
+                                    <p>Create diagrams online with the help of AI and go from brainstorming to process
+                                        mapping, and from technical documentation to system design in seconds.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/diagramming.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Brainstorming</h1>
+                                    <p>Unleash creative ideas and build on them with the help of sticky notes,
+                                        images, mind maps, videos, drawing capabilities — the list goes on.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/Brainstormwithoutshadow.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Diagramming</h1>
+                                    <p>Create diagrams online with the help of AI and go from brainstorming to process
+                                        mapping, and from technical documentation to system design in seconds.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/diagramming.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="grid">
+                                <div class="col-4">
+                                    <h1>Brainstorming</h1>
+                                    <p>Unleash creative ideas and build on them with the help of sticky notes,
+                                        images, mind maps, videos, drawing capabilities — the list goes on.</p>
+                                    <a href="">Learn more →</a>
+                                </div>
+                                <div class="col-8">
+                                    <img src="./assets/Brainstormwithoutshadow.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="why-companies-section">
+        <div class="container">
+            <h1 data-aos="zoom-in">Why companies large <br>
+                and small trust Miro</h1>
+            <a data-aos="fade-up" href="">Contact Sales to request a demo</a>
+            <div class="grid">
+                <div data-aos="fade-up" class="col-4">
+                    <h1>ISO</h1>
+                    <p>ISO-27001 enterprise-grade security compliant</p>
+                </div>
+                <div data-aos="fade-up" class="col-4">
+                    <h1>#1</h1>
+                    <p>Visual Collaboration Platform on G2</p>
+                </div>
+                <div data-aos="fade-up" class="col-4">
+                    <h1>99%</h1>
+                    <p>of the Fortune 100 are customers</p>
+                </div>
+                <div data-aos="fade-up" class="col-4">
+                    <h1>1,000+</h1>
+                    <p>community- and expert-built templates</p>
+                </div>
+                <div data-aos="fade-up" class="col-4">
+                    <h1>45M+</h1>
+                    <p>users around the world</p>
+                </div>
+                <div data-aos="fade-up" class="col-4">
+                    <h1>100+</h1>
+                    <p>integrations with technology partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="loved-worlds-section">
+            <h1 data-aos="fade-up">Loved by the world's best teams</h1>
+            <button data-aos="fade-up">See all customer stories →</button>
+            <div class="grid">
+                <div data-aos="fade-right" class="col-4">
+                    <img src="./assets/vmware.svg" alt="vmware logo">
+                    <p>“When the pandemic hit, those of us who thrive on in-person collaboration were worried that our
+                        creativity and productivity would suffer. Miro was the perfect tool to help us with
+                        collaboration, whiteboarding, and retrospectives while remote.”</p>
+                    <div>
+                        <img src="./assets/vmware-person.png" alt="vmware person">
+                        <p>Roxanne Mustafa <br> Design Team Lead at VMware</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-4">
+                    <img src="./assets/docu-sing.svg" alt="DocuSing logo">
+                    <p>“Miro helps solve one of the major gaps in product design: how to manage tasks across product
+                        designers whose projects are in different tools.”</p>
+                    <div>
+                        <img src="./assets/Jane-Docusign.png" alt="DocuSing person">
+                        <p>Jane Ashley <br> Head of Design at DocuSign</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="col-4">
+                    <img src="./assets/frog.svg" alt="frog logo">
+                    <p>“As we used Miro we moved from skepticism to belief to innovation, and now we have a tool that’s
+                        at the core of what we do and will continue to extend into the future.””</p>
+                    <div>
+                        <img src=" ./assets/frog-person.png" alt="frog person">
+                        <p>Laura Baird <br> Associate Design Director at frog</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="users-today-section">
+            <div data-aos="zoom-in">
+                <h1 data-aos="fade-up">Join 45M+ users today</h1>
+                <p data-aos="fade-left">Start for free — upgrade anytime.</p>
+                <a data-aos="fade-right" href="">Joining as an organization? Contact Sales</a>
+                <button data-aos="zoom-in">Sign up free <img src="./assets/WhiteArrowRight.svg" alt=""></button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Product
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div>
+                            <a href="">Online whiteboard</a>
+                        </div>
+
+                        <div>
+                            <a href="">Apps & Integrations</a>
+                        </div>
+
+                        <div>
+                            <a href="">Templates</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miroverse</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miro Developer Platform</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miro for Devices</a>
+                        </div>
+
+                        <div>
+                            <a href="">Security & Compliance</a>
+                        </div>
+
+                        <div>
+                            <a href="">Accessibility</a>
+                        </div>
+
+                        <div>
+                            <a href="">Changelog</a>
+                        </div>
+
+                        <div class="underline-footer">
+                            <a href="">View demo</a>
+                            <img src="./assets/WhiteArrowRight.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Solutions
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div>
+                            <a href="">Meetings and Workshops</a>
+                        </div>
+
+                        <div>
+                            <a href="">Brainstorming & Ideation</a>
+                        </div>
+
+                        <div>
+                            <a href="">Agile Workflows</a>
+                        </div>
+
+                        <div>
+                            <a href="">Diagramming</a>
+                        </div>
+
+                        <div>
+                            <a href="">Research & Design</a>
+                        </div>
+
+                        <div>
+                            <a href="">Strategy & Planning</a>
+                        </div>
+
+                        <div>
+                            <a href="">Mind Map</a>
+                        </div>
+
+                        <div>
+                            <a href="">Concept Map</a>
+                        </div>
+
+                        <div>
+                            <a href="">Online Sticky Notes</a>
+                        </div>
+
+                        <div>
+                            <a href="">Flowchart</a>
+                        </div>
+
+                        <div>
+                            <a href="">Wireframing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Resources
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div>
+                            <a href="">Miro Academy</a>
+                        </div>
+
+                        <div>
+                            <a href="">Help Center</a>
+                        </div>
+
+                        <div>
+                            <a href="">Blog</a>
+                        </div>
+
+                        <div>
+                            <a href="">Status</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miro Community</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miro Professional Network</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miro Experts Directory</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miro Events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Company
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div>
+                            <a href="">About us</a>
+                        </div>
+
+                        <div>
+                            <a href="">Careers 🚀</a>
+                        </div>
+
+                        <div>
+                            <a href="">Miro in the News</a>
+                        </div>
+
+                        <div>
+                            <a href="">Customer Stories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        Plans and Pricing
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div>
+                            <a href="">Pricing</a>
+                        </div>
+
+                        <div>
+                            <a href="">Business</a>
+                        </div>
+
+                        <div>
+                            <a href="">Enterprise</a>
+                        </div>
+
+                        <div>
+                            <a href="">Education</a>
+                        </div>
+
+                        <div>
+                            <a href="">Startups</a>
+                        </div>
+
+                        <div>
+                            <a href="">NPOs</a>
+                        </div>
+
+                        <div class="underline-footer">
+                            <a href="">Contact sales</a>
+                            <img src="./assets/WhiteArrowRight.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-2">
+                <h2>Product</h2>
+                <div class="accordion-body">
+                    <div>
+                        <a href="">Online whiteboard</a>
+                    </div>
+
+                    <div>
+                        <a href="">Apps & Integrations</a>
+                    </div>
+
+                    <div>
+                        <a href="">Templates</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miroverse</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miro Developer Platform</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miro for Devices</a>
+                    </div>
+
+                    <div>
+                        <a href="">Security & Compliance</a>
+                    </div>
+
+                    <div>
+                        <a href="">Accessibility</a>
+                    </div>
+
+                    <div>
+                        <a href="">Changelog</a>
+                    </div>
+
+                    <div class="underline-footer">
+                        <a href="">View demo</a>
+                        <img src="./assets/WhiteArrowRight.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <h2>Solutions</h2>
+                <div class="accordion-body">
+                    <div>
+                        <a href="">Meetings and Workshops</a>
+                    </div>
+
+                    <div>
+                        <a href="">Brainstorming & Ideation</a>
+                    </div>
+
+                    <div>
+                        <a href="">Agile Workflows</a>
+                    </div>
+
+                    <div>
+                        <a href="">Diagramming</a>
+                    </div>
+
+                    <div>
+                        <a href="">Research & Design</a>
+                    </div>
+
+                    <div>
+                        <a href="">Strategy & Planning</a>
+                    </div>
+
+                    <div>
+                        <a href="">Mind Map</a>
+                    </div>
+
+                    <div>
+                        <a href="">Concept Map</a>
+                    </div>
+
+                    <div>
+                        <a href="">Online Sticky Notes</a>
+                    </div>
+
+                    <div>
+                        <a href="">Flowchart</a>
+                    </div>
+
+                    <div>
+                        <a href="">Wireframing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h2>Resources</h2>
+                <div class="accordion-body">
+                    <div>
+                        <a href="">Miro Academy</a>
+                    </div>
+
+                    <div>
+                        <a href="">Help Center</a>
+                    </div>
+
+                    <div>
+                        <a href="">Blog</a>
+                    </div>
+
+                    <div>
+                        <a href="">Status</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miro Community</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miro Professional Network</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miro Experts Directory</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miro Events</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h2>Company</h2>
+                <div class="accordion-body">
+                    <div>
+                        <a href="">About us</a>
+                    </div>
+
+                    <div>
+                        <a href="">Careers 🚀</a>
+                    </div>
+
+                    <div>
+                        <a href="">Miro in the News</a>
+                    </div>
+
+                    <div>
+                        <a href="">Customer Stories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h2>Plans and Pricing</h2>
+                <div class="accordion-body">
+                    <div>
+                        <a href="">Pricing</a>
+                    </div>
+
+                    <div>
+                        <a href="">Business</a>
+                    </div>
+
+                    <div>
+                        <a href="">Enterprise</a>
+                    </div>
+
+                    <div>
+                        <a href="">Education</a>
+                    </div>
+
+                    <div>
+                        <a href="">Startups</a>
+                    </div>
+
+                    <div>
+                        <a href="">NPOs</a>
+                    </div>
+
+                    <div class="underline-footer">
+                        <a href="">Contact sales</a>
+                        <img src="./assets/WhiteArrowRight.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-container">
+            <div>
+                <a href=""><img src="./assets/twitter.svg" alt="twitter"></a>
+                <a href=""><img src="./assets/facebook.svg" alt="facebook"></a>
+                <a href=""><img src="./assets/linkedin.svg" alt="inkedin"></a>
+                <a href=""><img src="./assets/instagram.svg" alt="instagram"></a>
+                <a href=""><img src="./assets/youtube.svg" alt="youtube"></a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./assets/white-idioma.svg" alt="languages">EN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img src="./assets/TwemojiFlagUnitedStates.svg"
+                                    alt="Flag United States">English</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><img src="./assets/EmojioneV1FlagForBrazil.svg"
+                                    alt="Flag For Brazil">PT-BR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="terms">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Manage Cookies</a>
+            </div>
+            <div class="apps">
+                <a href=""><img src="./assets/appstore.svg" alt="appstore"></a>
+                <a href=""><img src="./assets/googleplay.svg" alt="googleplay"></a>
+            </div>
+        </div>
+        <div class="terms">
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Manage Cookies</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
